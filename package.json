@@ -16,7 +16,8 @@
     "license": "ISC",
     "dependencies": {
         "fuse.js": "^6.4.1",
-        "readdirp": "^3.5.0"
+        "readdirp": "^3.5.0",
+        "tslib": "^2.0.3"
     },
     "devDependencies": {
         "@types/mocha": "^8.0.3",
