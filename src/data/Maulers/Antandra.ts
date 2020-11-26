@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Antandra: Hero = {
     name: 'Antandra',
     title: 'Desert Fury',
+    skins: [],
+    union: 'The Flame & Spear',
     faction: 'Mauler',
     advantage: 'Wilder',
     role: 'Tank',
     type: 'Agility',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Leather',
     signature: {
-        item: 'Dances-in-Blood',
+        name: 'Dances-in-Blood',
         description: 'Ideal arms for a lethal mix of flurried offense and lightning quick defense',
         skill: 'Unconquerable',
-        default: 'When Antandra\'s health falls below 30% she activates this ability, allowing herself to recover 10% of her max health per second over 30 seconds. This ability may only be used once per battle',
+        unlock: 'When Antandra\'s health falls below 30% she activates this ability, allowing herself to recover 10% of her max health per second over 30 seconds. This ability may only be used once per battle',
         unlock1: 'Ability restores 15% of max health per second',
         unlock2: 'Ability restores 20% of max health per second',
         unlock3: 'Ability can be used twice per battle with an interval of 8 seconds between uses'

@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Satrana: Hero = {
     name: 'Satrana',
     title: 'Flame Weaver',
+    skins: [],
+    union: 'The Flame & Spear',
     faction: 'Mauler',
     advantage: 'Wilder',
     role: 'Burst Damage',
     type: 'Intelligence',
     class: 'Mage',
-    receiving: 'Dura\'s Sorcery',
+    trait: 'Dura\'s Sorcery',
     armor: 'Padded',
     signature: {
-        item: 'Blazing Ember',
+        name: 'Blazing Ember',
         description: 'A crystal that is able to absorb fire. This jewel is sometimes unable to contain the power held within, resulting in a very deadly aftermath',
         skill: 'Incinerate',
-        default: 'If Satrana is slain, her \'Fireseeds\' ability will be triggered when the enemy\'s health is below 50% and its damage will be increased by 70%',
+        unlock: 'If Satrana is slain, her \'Fireseeds\' ability will be triggered when the enemy\'s health is below 50% and its damage will be increased by 70%',
         unlock1: 'Energy that is recovered when injured or attacking is increased by 20%',
         unlock2: 'Energy that is recovered when injured or attacking is increased by 40%',
         unlock3: 'Only requires 250 energy to activate ultimate ability for the first time'

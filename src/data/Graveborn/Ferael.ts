@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Ferael: Hero = {
     name: 'Ferael',
     title: 'Doomwhisper',
+    skins: [],
+    union: null,
     faction: 'Graveborn',
     advantage: 'Lightbearer',
     role: 'Continuous Damage',
     type: 'Agility',
     class: 'Ranger',
-    receiving: 'Dura\'s Celerity',
+    trait: 'Dura\'s Celerity',
     armor: 'Leather',
     signature: {
-        item: 'Haunter\'s Hand',
+        name: 'Haunter\'s Hand',
         description: 'A bow housing a greedy spirit now tormented by desperate hunger',
         skill: 'Anguished Spirit',
-        default: 'Normal attacks will cause an evil spirit to haunt the enemy target if a critical strike occurs',
+        unlock: 'Normal attacks will cause an evil spirit to haunt the enemy target if a critical strike occurs',
         unlock1: 'Attack ratings for all enemies are reduced by 1.5% and health recovery rates are reduced by 10% for every spirit that is haunting an enemy on the battlefield. This ability may be stacked up to 5 times',
         unlock2: 'Attack ratings for all enemies are reduced by 1.5% and health recovery rates are reduced by 10% for every spirit that is haunting an enemy on the battlefield. This ability may be stacked up to 5 times',
         unlock3: 'Attack ratings for all enemies are reduced by 3% and health recovery rates are reduced by 10% for every spirit that is haunting an enemy on the battlefield. This ability may be stacked up to 8 times'

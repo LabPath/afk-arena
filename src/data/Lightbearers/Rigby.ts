@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Rigby: Hero = {
     name: 'Rigby',
     title: 'Brewmaster',
+    skins: [],
+    union: null,
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Tank',
     type: 'Strength',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Plate',
     signature: {
-        item: 'Oak Barrel',
+        name: 'Oak Barrel',
         description: 'Crafted out of sawtooth oak from the dark forest, this barrel possesses unique magical attributes that makes its contents all the more tasty',
         skill: 'Fiery Demise',
-        default: 'Rigby\'s \'Fire Breath\' ability will trigger an additional explosion on enemies currently set alight by the ability \'Barrel Bomb\', resulting in 180% damage being dealt to them',
+        unlock: 'Rigby\'s \'Fire Breath\' ability will trigger an additional explosion on enemies currently set alight by the ability \'Barrel Bomb\', resulting in 180% damage being dealt to them',
         unlock1: 'Damage increased by up to 210%',
         unlock2: 'Damage increased by up to 250%',
         unlock3: 'Explosions cause enemies to be knocked down and stunned for 3 seconds'

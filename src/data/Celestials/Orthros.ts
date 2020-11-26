@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Orthros: Hero = {
     name: 'Orthros',
     title: 'The Seer of Origins',
+    skins: [],
+    union: 'Titans of Time',
     faction: 'Celestial',
     advantage: 'Hypogean',
     role: 'Tank',
     type: 'Strength',
     class: 'Tank',
-    receiving: 'Dura\'s Fortitude',
+    trait: 'Dura\'s Fortitude',
     armor: 'Plate',
     signature: {
-        item: 'The Heavenly Vision',
+        name: 'The Heavenly Vision',
         description: 'Crafted by the celestial carpenter, Ansiel, this heavenly timepiece has the ability to manipulate the flow of time and even stop it',
         skill: 'Time Warp',
-        default: 'Reduces the Haste of enemies that get too close to Orthros by 30 points',
+        unlock: 'Reduces the Haste of enemies that get too close to Orthros by 30 points',
         unlock1: 'Reduces the Haste of enemies that get too close to Orthros by 45 points',
         unlock2: 'Reduces the Haste of enemies that get too close to Orthros by 60 points',
         unlock3: 'Enemies that remain too close to Orthros for more than 6 seconds will become frozen in time for 3 seconds'

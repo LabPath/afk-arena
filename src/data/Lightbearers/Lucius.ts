@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Lucius: Hero = {
     name: 'Lucius',
     title: 'Lightbringer',
+    skins: ['The Mariner'],
+    union: 'The Lightbringers',
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Regen',
     type: 'Strength',
     class: 'Tank',
-    receiving: 'Dura\'s Fortitude',
+    trait: 'Dura\'s Fortitude',
     armor: 'Plate',
     signature: {
-        item: 'The Winged Protector',
+        name: 'The Winged Protector',
         description: 'A blessed shield that remains unscathed after a hundred battles',
         skill: 'Divine Purge',
-        default: 'Enemy heroes have their energy recovery effects reduced by 30% for 4 seconds when they are struck by the ability \'Divine Strike\' or if a normal attack becomes a critical strike',
+        unlock: 'Enemy heroes have their energy recovery effects reduced by 30% for 4 seconds when they are struck by the ability \'Divine Strike\' or if a normal attack becomes a critical strike',
         unlock1: 'Enemy heroes have their energy recovery effects reduced by 60% for 4 seconds',
         unlock2: 'Enemy heroes have their energy recovery effects reduced by 90% for 4 seconds',
         unlock3: 'Removes the majority of the enemy\'s buffs when used'

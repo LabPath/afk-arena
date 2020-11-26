@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Seirus: Hero = {
     name: 'Seirus',
     title: 'Savior of the Sea',
+    skins: [],
+    union: 'Guardians of the Abyss',
     faction: 'Wilder',
     advantage: 'Graveborn',
     role: 'Tank',
     type: 'Strength',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Plate',
     signature: {
-        item: 'Tidemaker',
+        name: 'Tidemaker',
         description: 'A fearsome weapon with the power of crashing waves',
         skill: 'Sea Lord',
-        default: 'At the beginning of battles Seirus will cause his own max health to increase by 40%, however his current health after the increase will not be at maximum unless restored',
+        unlock: 'At the beginning of battles Seirus will cause his own max health to increase by 40%, however his current health after the increase will not be at maximum unless restored',
         unlock1: 'At the beginning of battles Seirus will recover 2% of his max health per second over 40 seconds',
         unlock2: 'The value of Seirus\' max health increase is raised to 70%',
         unlock3: 'The value of Seirus\' max health increase is raised to 100%'

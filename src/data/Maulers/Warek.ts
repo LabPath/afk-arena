@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Warek: Hero = {
     name: 'Warek',
     title: 'The Untamed',
+    skins: [],
+    union: null,
     faction: 'Mauler',
     advantage: 'Wilder',
     role: 'Continuous Damage',
     type: 'Strength',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Plate',
     signature: {
-        item: 'Coward Crusher',
+        name: 'Coward Crusher',
         description: 'Heavy vambraces well suited to a wild and brutish fighting style',
         skill: 'Brawler\'s Resistance',
-        default: 'When Warek’s \'Carnal Rage\' ability cannot be stacked any further, he will recover 3% health per second over 15 seconds',
+        unlock: 'When Warek’s \'Carnal Rage\' ability cannot be stacked any further, he will recover 3% health per second over 15 seconds',
         unlock1: 'Ability restores 4% of max health per second',
         unlock2: 'Ability restores 5% of max health per second',
         unlock3: 'Stacks Warek’s \'Carnal Rage\' buff effects once every 2 seconds. Once the effects can no longer be stacked, his attack rating will be increased by an additional 0.7% per second'

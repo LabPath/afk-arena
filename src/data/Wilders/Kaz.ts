@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Kaz: Hero = {
     name: 'Kaz',
     title: 'Hand of the Wood',
+    skins: [],
+    union: 'The Dusk Patrollers',
     faction: 'Wilder',
     advantage: 'Graveborn',
     role: 'Assassin',
     type: 'Agility',
     class: 'Ranger',
-    receiving: 'Dura\'s Celerity',
+    trait: 'Dura\'s Celerity',
     armor: 'Leather',
     signature: {
-        item: 'The Night\'s Kiss',
+        name: 'The Night\'s Kiss',
         description: 'Blades as deadly as the night time assassin herself',
         skill: 'Elude',
-        default: 'At the beginning of the battle Kaz raises her Dodge by 100 points and Crit Rating by 40 points. The increased attributes will gradually decrease over 20 seconds until they return to normal',
+        unlock: 'At the beginning of the battle Kaz raises her Dodge by 100 points and Crit Rating by 40 points. The increased attributes will gradually decrease over 20 seconds until they return to normal',
         unlock1: 'Increased attributes will decrease over 40 seconds until returning to normal',
         unlock2: 'Kaz\'s chance to dodge magic attacks are increased by 1% for every 16 Dodge points that she gains. Chance to dodge magic attacks can be raised to a maximum of 25%',
         unlock3: 'Kaz\'s chance to dodge magic attacks are increased by 1% for every 14 Dodge points that she gains. Chance to dodge magic attacks can be raised to a maximum of 50%'

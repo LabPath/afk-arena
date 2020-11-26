@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Numisu: Hero = {
     name: 'Numisu',
     title: 'The All Seer',
+    skins: [],
+    union: 'The Dragon Slayers',
     faction: 'Mauler',
     advantage: 'Wilder',
     role: 'Regen',
     type: 'Intelligence',
     class: 'Support',
-    receiving: 'Dura\'s Sustenance',
+    trait: 'Dura\'s Sustenance',
     armor: 'Padded',
     signature: {
-        item: 'Mask of Visions',
+        name: 'Mask of Visions',
         description: 'A mask that acts as a window to another world',
         skill: 'Totem Master',
-        default: 'At the beginning of the battle Numisu sets down an offensive totem at center of the battlefield',
+        unlock: 'At the beginning of the battle Numisu sets down an offensive totem at center of the battlefield',
         unlock1: 'At the beginning of the battle Numisu sets down a rejuvenating totem behind his own team’s backline',
         unlock2: 'The health of Numisu\'s totems is increased by 40%',
         unlock3: 'The health of Numisu\'s totems is increased by 100%'

@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Rosaline: Hero = {
     name: 'Rosaline',
     title: 'The Kind',
+    skins: [],
+    union: null,
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Buffer',
     type: 'Intelligence',
     class: 'Support',
-    receiving: 'Dura\'s Sustenance',
+    trait: 'Dura\'s Sustenance',
     armor: 'Padded',
     signature: {
-        item: 'Broom of Life',
+        name: 'Broom of Life',
         description: 'An extraordinary broom which has a mind of its own, brought to life by Rosaline',
         skill: 'Servitude',
-        default: 'Rosaline raises the attack and defense ratings of the ally she is currently following for 8% of her own ratings\' values',
+        unlock: 'Rosaline raises the attack and defense ratings of the ally she is currently following for 8% of her own ratings\' values',
         unlock1: 'Attack and defense ratings are raised by 16% of Rosaline\'s own rating values',
         unlock2: 'Attack and defense ratings are raised by 30% of Rosaline\'s own rating values',
         unlock3: 'Raises ally\'s crit rating and dodge for 25% of Rosaline\'s own rating values'   

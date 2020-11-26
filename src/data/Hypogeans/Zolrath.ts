@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Zolrath: Hero = {
     name: 'Zolrath',
     title: 'Voidbinder',
+    skins: [],
+    union: 'Titans of Time',
     faction: 'Hypogean',
     advantage: 'Celestial',
     role: 'Assassin',
     type: 'Agility',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Leather',
     signature: {
-        item: 'Hourglass of Time',
+        name: 'Hourglass of Time',
         description: 'An hourglass that has the ability to change the flow of time, allowing for its holder to go back or forth in time as they please. This hourglass is said to be the embodiment of Zolrath\'s wretched soul',
         skill: 'Prey',
-        default: 'Damage dealt to enemies with a lower health percentage than Zolrath is increased by 10%',
+        unlock: 'Damage dealt to enemies with a lower health percentage than Zolrath is increased by 10%',
         unlock1: 'Damage dealt to enemies with a lower health percentage than Zolrath is increased by 25%',
         unlock2: 'Damage dealt to enemies with a lower health percentage than Zolrath is increased by 40%',
         unlock3: 'Damage ignores defense rating and damage immunity effect of enemies that have less than 40% of their max health'

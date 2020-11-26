@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Estrilda: Hero = {
     name: 'Estrilda',
     title: 'Knight of Valor',
+    skins: [],
+    union: 'Castellans',
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Burst Damage',
     type: 'Strength',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Plate',
     signature: {
-        item: 'Banner of Rayne',
+        name: 'Banner of Rayne',
         description: 'A banner bearing the crest of House Rayne. A symbol of their indomitable spirit',
         skill: 'Inspirit',
-        default: 'Raises all allies\' attack ratings by 5% and defense ratings by 10% for every non- summoned enemy that falls in combat while Estrilda is alive up until the end of the battle. This ability may be stacked up to 3 times',
+        unlock: 'Raises all allies\' attack ratings by 5% and defense ratings by 10% for every non- summoned enemy that falls in combat while Estrilda is alive up until the end of the battle. This ability may be stacked up to 3 times',
         unlock1: 'Raises attack rating by 7.5% and defense rating by 15% every time the ability is used',
         unlock2: 'Raises attack rating by 10% and defense rating by 20% every time the ability is used',
         unlock3: 'Restores 80 energy to all allies when ability is used'

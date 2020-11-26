@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Skreg: Hero = {
     name: 'Skreg',
     title: 'The Cunning',
+    skins: [],
+    union: null,
     faction: 'Mauler',
     advantage: 'Wilder',
     role: 'Tank',
     type: 'Strength',
     class: 'Tank',
-    receiving: 'Dura\'s Fortitude',
+    trait: 'Dura\'s Fortitude',
     armor: 'Plate',
     signature: {
-        item: 'Long Fang',
+        name: 'Long Fang',
         description: 'A cavalry spear crafted from the jaw of a demon lord. Inflicts wicked wounds',
         skill: 'Beast Rider',
-        default: 'The ability \'Beast of Burden\' will no longer drain energy for the first 5 seconds after each time it is used',
+        unlock: 'The ability \'Beast of Burden\' will no longer drain energy for the first 5 seconds after each time it is used',
         unlock1: 'Only requires 500 energy to activate ultimate ability for the first time',
         unlock2: 'Energy that is recovered when injured is increased by 50%',
         unlock3: 'Only requires 200 energy to activate ultimate ability for the first time'

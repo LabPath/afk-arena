@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Tasi: Hero = {
     name: 'Tasi',
     title: 'Dreamhopper',
+    skins: ['The Spring Bloom'],
+    union: 'Wisdom & Hope',
     faction: 'Wilder',
     advantage: 'Graveborn',
     role: 'Control',
     type: 'Intelligence',
     class: 'Support',
-    receiving: 'Dura\'s Sustenance',
+    trait: 'Dura\'s Sustenance',
     armor: 'Padded',
     signature: {
-        item: 'The Dream Halo',
+        name: 'The Dream Halo',
         description: 'An ethereal ring of light capable of driving away nightmares',
         skill: 'Diminish',
-        default: 'Reduces the attack rating of nearby enemies by 10% after Tasi uses her \'Teleportation\' ability',
+        unlock: 'Reduces the attack rating of nearby enemies by 10% after Tasi uses her \'Teleportation\' ability',
         unlock1: 'The scope of the reduced attack rating effect is increased up to 15%',
         unlock2: 'The scope of the reduced attack rating effect is increased up to 20%',
         unlock3: 'The scope of the reduced attack rating effect is increased up to 30%'

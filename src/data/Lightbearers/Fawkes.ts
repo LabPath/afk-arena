@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Fawkes: Hero = {
     name: 'Fawkes',
     title: 'Death\'s Defeat',
+    skins: [],
+    union: 'The Bounty Hunters',
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Control',
     type: 'Agility',
     class: 'Ranger',
-    receiving: 'Dura\'s Celerity',
+    trait: 'Dura\'s Celerity',
     armor: 'Leather',
     signature: {
-        item: 'The Soul Prison',
+        name: 'The Soul Prison',
         description: 'An enchanted casket containing a horde of malicious spirits',
         skill: 'Purged Peserverance',
-        default: 'Raises the defense ratings of all allied heroes by 5% for 5 seconds if they possess more than 60% of their max energy. Affected allies are also impervious to control abilities',
+        unlock: 'Raises the defense ratings of all allied heroes by 5% for 5 seconds if they possess more than 60% of their max energy. Affected allies are also impervious to control abilities',
         unlock1: 'Defense rating is increased up to 20%',
         unlock2: 'Defense rating is increased up to 40%',
         unlock3: 'Haste is increased for 8 seconds'

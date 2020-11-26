@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Baden: Hero = {
     name: 'Baden',
     title: 'The Abomination',
+    skins: [],
+    union: null,
     faction: 'Graveborn',
     advantage: 'Lightbearer',
     role: 'Continuous Damage',
     type: 'Agility',
     class: 'Warrior',
-    receiving: 'Dura\'s Might',
+    trait: 'Dura\'s Might',
     armor: 'Leather',
     signature: {
-        item: 'Spear of Decay',
+        name: 'Spear of Decay',
         description: 'A cruel, necrotic weapon that causes festering wounds nearly impossible to heal',
         skill: 'Phantom Force',
-        default: 'A cruel, necrotic weapon that causes festering wounds nearly impossible to heal',
+        unlock: 'A cruel, necrotic weapon that causes festering wounds nearly impossible to heal',
         unlock1: 'All of Baden\'s phantoms have their health increased by 15%',
         unlock2: 'All of Baden\'s phantoms have their health increased by 30%',
         unlock3: 'Each time a total of 3 phantom Badens disappear from the battlefield, Baden will initiate the effects of his \'Phantom Strike\''

@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Solise: Hero = {
     name: 'Solise',
     title: 'The Floral Wonder',
+    skins: [],
+    union: null,
     faction: 'Wilder',
     advantage: 'Graveborn',
     role: 'Control',
     type: 'Intelligence',
     class: 'Mage',
-    receiving: 'Dura\'s Sorcery',
+    trait: 'Dura\'s Sorcery',
     armor: 'Padded',
     signature: {
-        item: 'Floral Cloak of Hope',
+        name: 'Floral Cloak of Hope',
         description: 'Woven together with a magical material, this cloak is more powerful than it appears. Wearing it allows one to forge a powerful connection with the forest\'s flora',
         skill: 'Flower Power',
-        default: 'The Floral Specter will attack 2 enemies simultaneously',
+        unlock: 'The Floral Specter will attack 2 enemies simultaneously',
         unlock1: 'The Floral Specter gains an additional 20% health',
         unlock2: 'The Floral Specter gains an additional 50% health',
         unlock3: 'The Floral Specter will attack 3 enemies simultaneously'

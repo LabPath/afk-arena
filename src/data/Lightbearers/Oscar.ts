@@ -3,18 +3,20 @@ import { Hero } from '../../interfaces'
 export const Oscar: Hero = {
     name: 'Oscar',
     title: 'The True Gentleman',
+    skins: [],
+    union: null,
     faction: 'Lightbearer',
     advantage: 'Mauler',
     role: 'Assassin',
     type: 'Agility',
     class: 'Ranger',
-    receiving: 'Dura\'s Celerity',
+    trait: 'Dura\'s Celerity',
     armor: 'Leather',
     signature: {
-        item: 'Exquisite Table Knife',
+        name: 'Exquisite Table Knife',
         description: 'A beautifully crafted, yet deadly knife that is as sophisticated as its owner. Able to slice through all types of meat with ease, few people are worthy of owning such a tool',
         skill: 'Uninvited Guest',
-        default: 'If an enemy appears on the allied side of the battlefield, Oscar instantaneously appears beside them and proceeds to kick them back into their own half of the battlefield, resulting in 200% damage being dealt to the enemy',
+        unlock: 'If an enemy appears on the allied side of the battlefield, Oscar instantaneously appears beside them and proceeds to kick them back into their own half of the battlefield, resulting in 200% damage being dealt to the enemy',
         unlock1: 'Ability converts 100% of damage taken by the enemy into health',
         unlock2: 'Damaged increased by up to 300%',
         unlock3: 'Ability possesses a stun effect which lasts for 5 seconds'
