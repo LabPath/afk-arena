@@ -2,22 +2,24 @@ export interface Hero {
     name: string
     aliases?: string[]
     title: string
+    skins: string[]
+    union: string | null
     faction: Faction
-    advantage: FactionAdvantage
+    advantage: Faction | null
     role: PrimaryRole
-    type: NaturalStat
-    class: NaturalClass
-    receiving: Trait
-    armor: ArmorMaterial
+    type: HeroType
+    armor: ArmorType
+    class: Class
+    trait: Trait
     signature: SignatureItem
     furniture: Furniture
 }
 
 export interface SignatureItem {
-    item: string
+    name: string
     description: string
     skill: string
-    default: string
+    unlock: string
     unlock1: string
     unlock2: string
     unlock3: string
@@ -29,7 +31,7 @@ export interface Furniture {
     unlock2: string
 }
 
-export type ArmorMaterial = 'Padded' | 'Plate' | 'Leather'
+export type ArmorType = 'Padded' | 'Plate' | 'Leather'
 
 export type Faction =
     | 'Celestial'
@@ -40,11 +42,9 @@ export type Faction =
     | 'Mauler'
     | 'Wilder'
 
-export type FactionAdvantage = Omit<Faction, 'Dimensional'> | 'None'
+export type Class = 'Mage' | 'Ranger' | 'Support' | 'Tank' | 'Warrior'
 
-export type NaturalClass = 'Mage' | 'Ranger' | 'Support' | 'Tank' | 'Warrior'
-
-export type NaturalStat = 'Agility' | 'Intelligence' | 'Strength'
+export type HeroType = 'Agility' | 'Intelligence' | 'Strength'
 
 export type PrimaryRole =
     | 'Area of Effect'

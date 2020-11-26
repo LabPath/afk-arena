@@ -24,7 +24,7 @@ export class AFK {
 
     public async signature() {
         return await this.find<SignatureItem>([
-            'name', 'signature.item', 'signature.skill'
+            'name', 'signature.name', 'signature.skill'
         ], 'signature')
     }
 
