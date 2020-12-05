@@ -1,4 +1,4 @@
-import { Hero } from '../../interfaces'
+import { Hero } from '../../structures/Hero'
 
 export const Lucius: Hero = {
     name: 'Lucius',

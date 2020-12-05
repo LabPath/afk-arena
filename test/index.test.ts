@@ -1,25 +1,35 @@
 import assert from 'assert'
-import AFK from '../src/index'
+import { AFK } from '../src/structures/index'
 import { Athalia } from '../src/data/Celestials/Athalia'
 
-const hero = new AFK('athalia');
-
 describe('AFK', () => {
-    describe('#info()', () => {
-        it('should return a single Hero object equal to Athalia', async () => {
-            assert.strictEqual(await hero.info(), Athalia)
+    describe('#Hero', () => {
+        describe('#get()', () => {
+            it('should return a single Hero object equal to Athalia', async () => {
+                const [hero] = await AFK.Hero.get('athalia')
+
+                assert.strictEqual(hero, Athalia)
+            })
         })
     })
 
-    describe('#signature()', () => {
-        it('should return a single Signature Item equal to "The Sin Purgers"', async () => {
-            assert.strictEqual(await hero.signature(), Athalia.signature)
+    describe('#SignatureItem', () => {
+        describe('#get()', () => {
+            it('should return a single Signature Item equal to "The Sin Purgers"', async () => {
+                const [signature] = await AFK.SignatureItem.get('purgers')
+
+                assert.strictEqual(signature, Athalia.signature)
+            })
         })
     })
 
-    describe('#furniture()', () => {
-        it('should return a single Furniture object equal to "Power of Light"', async () => {
-            assert.strictEqual(await hero.furniture(), Athalia.furniture)
+    describe('#Furniture', () => {
+        describe ('#get()', () => {
+            it('should return a single Furniture object equal to "Power of Light"', async () => {
+                const [furniture] = await AFK.Furniture.get('power light')
+
+                assert.strictEqual(furniture, Athalia.furniture)
+            })
         })
     })
 })

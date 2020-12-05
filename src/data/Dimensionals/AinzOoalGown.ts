@@ -1,4 +1,4 @@
-import { Hero } from '../../interfaces'
+import { Hero } from '../../structures/Hero'
 
 export const AinzOoalGown: Hero = {
     name: 'Ainz Ooal Gown',

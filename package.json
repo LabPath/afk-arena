@@ -13,6 +13,10 @@
         "afkarena",
         "lilith"
     ],
+    "files": [
+        "typings/index.d.ts",
+        "dist"
+    ],
     "author": "Bread",
     "license": "ISC",
     "dependencies": {

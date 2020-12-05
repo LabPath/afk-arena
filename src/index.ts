@@ -1,1 +1,1 @@
-export * from './AFK'
+export * as AFK from './structures/AFK'

@@ -1,59 +1,54 @@
 declare module 'afk-arena' {
-    export class AFK {
-        private options: SearchOptions
-        private query: string
-        public constructor(query: string, options?: SearchOptions)
+    export class Base {
+        protected static find<T>(query: string, keys: string[], prop?: string): Promise<T[]> | null
+        private static list<T>(): Promise<T[]>
+    }
 
-        public info(): Promise<Hero | Hero[]>
-        public signature(): Promise<SignatureItem | SignatureItem[]>
-        public furniture(): Promise<Furniture | Furniture[]>
+    export namespace AFK {
         
-        private find<T>(): Promise<T | T[]>
-        private list<T>(): Promise<T[]>
+        export class Furniture extends Base {
+            public readonly ability: string
+            public readonly unlock1: string
+            public readonly unlock2: string
+
+            public static get(furniture: string): Promise<Furniture[]>
+        }
+
+        export class Hero extends Base {
+            public readonly name: string
+            public readonly aliases?: string[]
+            public readonly title: string
+            public readonly skins: string[]
+            public readonly union: string | null
+            public readonly faction: Faction | null
+            public readonly advantage: Faction | null
+            public readonly role: PrimaryRole
+            public readonly type: HeroType
+            public readonly class: HeroClass
+            public readonly trait: HeroTrait
+            public readonly armor: ArmorType
+            public readonly signature: SignatureItem
+            public readonly furniture: Furniture
+
+            public static get(hero: string): Promise<Hero[]>
+        }
+
+        export class SignatureItem extends Base {
+            public readonly name: string
+            public readonly description: string
+            public readonly skill: string
+            public readonly unlock: string
+            public readonly unlock1: string
+            public readonly unlock2: string
+            public readonly unlock3: string
+
+            public static get(signature: string): Promise<SignatureItem[]>
+        }
     }
 
-    interface SearchOptions {
-        strict: boolean
-        faction: string
-        threshold: number
-    }
+    export type ArmorType = 'Padded' | 'Plate' | 'Leather'
 
-    interface Hero {
-        name: string
-        aliases?: string[]
-        title: string
-        skins: string[]
-        union: string | null
-        faction: Faction
-        advantage: Faction | null
-        role: PrimaryRole
-        type: HeroType
-        armor: ArmorType
-        class: Class
-        trait: Trait
-        signature: SignatureItem
-        furniture: Furniture
-    }
-
-    interface SignatureItem {
-        name: string
-        description: string
-        skill: string
-        unlock: string
-        unlock1: string
-        unlock2: string
-        unlock3: string
-    }
-
-    interface Furniture {
-        ability: string
-        unlock1: string
-        unlock2: string
-    }
-
-    type ArmorType = 'Padded' | 'Plate' | 'Leather'
-
-    type Faction =
+    export type Faction =
         | 'Celestial'
         | 'Dimensional'
         | 'Graveborn'
@@ -62,11 +57,18 @@ declare module 'afk-arena' {
         | 'Mauler'
         | 'Wilder'
 
-    type Class = 'Mage' | 'Ranger' | 'Support' | 'Tank' | 'Warrior'
+    export type HeroClass = 'Mage' | 'Ranger' | 'Support' | 'Tank' | 'Warrior'
 
-    type HeroType = 'Agility' | 'Intelligence' | 'Strength'
+    export type HeroTrait =
+        | "Dura's Sorcery"
+        | "Dura's Celerity"
+        | "Dura's Sustenance"
+        | "Dura's Fortitude"
+        | "Dura's Might"
 
-    type PrimaryRole =
+    export type HeroType = 'Agility' | 'Intelligence' | 'Strength'
+
+    export type PrimaryRole =
         | 'Area of Effect'
         | 'Assassin'
         | 'Buffer'
@@ -76,11 +78,4 @@ declare module 'afk-arena' {
         | 'Debuffer'
         | 'Regen'
         | 'Tank'
-
-    type Trait =
-        | "Dura's Sorcery"
-        | "Dura's Celerity"
-        | "Dura's Sustenance"
-        | "Dura's Fortitude"
-        | "Dura's Might"
 }
