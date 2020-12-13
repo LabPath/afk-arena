@@ -3,7 +3,7 @@ import { Hero } from '../../structures/Hero'
 export const Solise: Hero = {
     name: 'Solise',
     title: 'The Floral Wonder',
-    skins: [],
+    skins: ['Bountiful Bolero'],
     union: null,
     faction: 'Wilder',
     advantage: 'Graveborn',
