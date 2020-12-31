@@ -4,7 +4,7 @@ export const Daimon: Hero = {
     name: 'Daimon',
     aliases: ['stitchy'],
     title: 'The Forsaken Child',
-    skins: [],
+    skins: ['The Glacial Child'],
     union: 'The Forsaken Family',
     faction: 'Graveborn',
     advantage: 'Lightbearer',

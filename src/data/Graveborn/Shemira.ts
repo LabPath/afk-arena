@@ -3,7 +3,7 @@ import { Hero } from '../../structures/Hero'
 export const Shemira: Hero = {
     name: 'Shemira',
     title: 'Corpsemaker',
-    skins: [],
+    skins: ['The Frozen Mother'],
     union: 'The Forsaken Family',
     faction: 'Graveborn',
     advantage: 'Lightbearer',
